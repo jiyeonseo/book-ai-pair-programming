@@ -45,17 +45,6 @@ graph TD
 
 ```mermaid
 sequenceDiagram
-    participant Student
-    participant School
-    participant System
-    Student->>School: Apply for admission
-    School->>System: Initiate student registration
-    System->>Student: Request for student details
-    Student->>System: Provide student details
-    System->>School: Register student
-```
-```mermaid
-sequenceDiagram
     participant 학생 as Student
     participant 학교 as School
     participant 학과 as Department
