@@ -9,6 +9,7 @@ erDiagram
     STUDENT ||--o{ CLASS : "attends" 
     TEACHER ||--o{ CLASS : "teaches"
     SUBJECT ||--o{ TEACHER : "specializes in"
+    GRADE ||--o{ CLASS : "has"
     CLASS {
         string name
         int number_of_students
@@ -23,6 +24,9 @@ erDiagram
     }
     SUBJECT {
         string name
+    }
+    GRADE {
+        int level
     }
 ```
 
